@@ -1,0 +1,186 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Adactin.spec.js >> pom
+- Location: tests\Adactin.spec.js:5:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.selectOption: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//select[@id="location"]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - table [ref=e2]:
+    - rowgroup [ref=e3]:
+      - 'row "AdactIn Group Adactin Group: Hotel Reservation System" [ref=e4]':
+        - cell "AdactIn Group" [ref=e5]:
+          - img "AdactIn Group" [ref=e6]
+        - 'cell "Adactin Group: Hotel Reservation System" [ref=e7]':
+          - 'img "Adactin Group: Hotel Reservation System" [ref=e8]'
+      - row [ref=e9]:
+        - cell [ref=e10]
+  - table [ref=e11]:
+    - rowgroup [ref=e12]:
+      - 'row "Adactin Launches The Adactin Hotel App! Hotel Image 3 The best Free learning platform for Software Testing Now available to download for free on IOS and Android. Existing User Login - Build 1 Username Password Forgot Password? Invalid Login details or Your Password might have expired. Click here to reset your password Login New User Register Here Important Note: Hotel Application has 2 builds: Build 1 Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build. Build 2 Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build. Go to Build 2 For any queries/issues please email: info@adactin.com" [ref=e13]':
+        - cell "Adactin Launches The Adactin Hotel App! Hotel Image 3 The best Free learning platform for Software Testing Now available to download for free on IOS and Android." [ref=e14]:
+          - paragraph [ref=e15]: Adactin Launches The Adactin Hotel App!
+          - table [ref=e16]:
+            - rowgroup [ref=e17]:
+              - row "Hotel Image 3" [ref=e18]:
+                - cell "Hotel Image 3" [ref=e19]:
+                  - img "Hotel Image 3" [ref=e20]
+              - row "The best Free learning platform for Software Testing Now available to download for free on IOS and Android." [ref=e21]:
+                - cell "The best Free learning platform for Software Testing Now available to download for free on IOS and Android." [ref=e22]:
+                  - text: The best Free learning platform for Software Testing
+                  - text: Now available to download for free on IOS and Android.
+          - table [ref=e23]:
+            - rowgroup [ref=e24]:
+              - row [ref=e25]:
+                - cell [ref=e26]:
+                  - link [ref=e27] [cursor=pointer]:
+                    - /url: https://testflight.apple.com/join/Ai3nVPMD
+                    - img [ref=e28]
+                - cell [ref=e29]:
+                  - link [ref=e30] [cursor=pointer]:
+                    - /url: https://play.google.com/store/apps/details?id=com.adactin.education.hotelbooking
+                    - img [ref=e31]
+        - 'cell "Existing User Login - Build 1 Username Password Forgot Password? Invalid Login details or Your Password might have expired. Click here to reset your password Login New User Register Here Important Note: Hotel Application has 2 builds: Build 1 Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build. Build 2 Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build. Go to Build 2 For any queries/issues please email: info@adactin.com" [ref=e32]':
+          - table [ref=e34]:
+            - rowgroup [ref=e35]:
+              - row "Existing User Login - Build 1" [ref=e36]:
+                - cell "Existing User Login - Build 1" [ref=e37]
+              - row "Username" [ref=e38]:
+                - cell "Username" [ref=e39]
+                - cell [ref=e40]:
+                  - textbox [ref=e41]
+              - row "Password" [ref=e42]:
+                - cell "Password" [ref=e43]
+                - cell [ref=e44]:
+                  - textbox [ref=e45]
+              - row "Forgot Password?" [ref=e46]:
+                - cell [ref=e47]
+                - cell "Forgot Password?" [ref=e48]:
+                  - link "Forgot Password?" [ref=e50] [cursor=pointer]:
+                    - /url: ForgotPassword.php
+              - row "Invalid Login details or Your Password might have expired. Click here to reset your password" [ref=e51]:
+                - cell [ref=e52]
+                - cell "Invalid Login details or Your Password might have expired. Click here to reset your password" [ref=e53]:
+                  - generic [ref=e55]:
+                    - text: Invalid Login details or Your Password might have expired.
+                    - link "Click here" [ref=e56] [cursor=pointer]:
+                      - /url: http://adactinhotelapp.com/ForgotPassword.php
+                    - text: to reset your password
+              - row "Login" [ref=e57]:
+                - cell [ref=e58]
+                - cell "Login" [ref=e59]:
+                  - button "Login" [ref=e60]
+              - row "New User Register Here" [ref=e61]:
+                - cell "New User Register Here" [ref=e62]:
+                  - link "New User Register Here" [ref=e63] [cursor=pointer]:
+                    - /url: Register.php
+          - table [ref=e64]:
+            - rowgroup [ref=e65]:
+              - row "Important Note:" [ref=e66]:
+                - cell "Important Note:" [ref=e67]
+              - 'row "Hotel Application has 2 builds: Build 1 Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build. Build 2 Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build. Go to Build 2" [ref=e68]':
+                - 'cell "Hotel Application has 2 builds: Build 1 Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build. Build 2 Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build. Go to Build 2" [ref=e69]':
+                  - text: "Hotel Application has 2 builds:"
+                  - list [ref=e70]:
+                    - listitem [ref=e71]:
+                      - strong [ref=e72]: Build 1
+                      - text: Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build.
+                    - listitem [ref=e73]:
+                      - strong [ref=e74]: Build 2
+                      - text: Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build.
+                      - link "Go to Build 2" [ref=e75] [cursor=pointer]:
+                        - /url: ../HotelAppBuild2
+                        - strong [ref=e76]: Go to Build 2
+              - 'row "For any queries/issues please email: info@adactin.com" [ref=e77]':
+                - 'cell "For any queries/issues please email: info@adactin.com" [ref=e78]':
+                  - text: "For any queries/issues please email:"
+                  - link "info@adactin.com" [ref=e79] [cursor=pointer]:
+                    - /url: mailto:info@adactin.com
+  - table [ref=e80]:
+    - rowgroup [ref=e81]:
+      - row [ref=e82]:
+        - cell [ref=e83]
+      - row "© 2026 - Adactin.com. All Rights Reserved. Adactin Group Pty. Ltd." [ref=e84]:
+        - cell "© 2026 - Adactin.com. All Rights Reserved. Adactin Group Pty. Ltd." [ref=e85]:
+          - text: © 2026 -
+          - link "Adactin.com" [ref=e86] [cursor=pointer]:
+            - /url: http://www.adactin.com
+          - text: . All Rights Reserved. Adactin Group Pty. Ltd.
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | export class SearchHotel {
+  3  |     constructor(page) {
+  4  |     this.page=page    
+  5  |     this.location=page.locator('//select[@id="location"]')
+  6  |     this.hotel=page.locator('//select[@id="hotels"]')
+  7  |     this.hoteltype=page.locator('//select[@id="room_type"]')
+  8  |     this.numberofroom=page.locator('//select[@id="room_nos"]')
+  9  |     this.adult=page.locator('//select[@id="adult_room"]')
+  10 |     this.childern=page.locator('//select[@id="child_room"]')
+  11 |     this.searchclk=page.locator('//input[@id="Submit"]')
+  12 | 
+  13 |     this.selecthotel=page.locator('//input[@id="radiobutton_0"]')
+  14 |     this.continue=page.locator('//input[@id="continue"]')
+  15 | 
+  16 |     }
+  17 | 
+  18 |     async  DD_location(){
+> 19 |         await this.location.selectOption({label:'Sydney'})
+     |                             ^ Error: locator.selectOption: Test timeout of 30000ms exceeded.
+  20 |     }
+  21 | 
+  22 |     async DD_hotel(){
+  23 |         await this.hotel.selectOption({index:1})
+  24 |     }
+  25 | 
+  26 |     async DD_hoteltype(){
+  27 |         await this.hoteltype.selectOption({value: "Deluxe"})
+  28 |     }
+  29 |     async DD_numberofroom(){
+  30 |         await this.numberofroom.selectOption({value:"2"})
+  31 |     }
+  32 |     async DD_adult(){
+  33 |         await this.adult.selectOption({label:"2 - Two"})
+  34 |     }
+  35 |     async DD_childern(){    
+  36 |         await this.childern.selectOption({index:2})
+  37 |     }
+  38 |     async searchBtn(){
+  39 |         await this.searchclk.click()
+  40 |     }
+  41 | 
+  42 | 
+  43 |     async selectradiobtn(){
+  44 |         await this.selecthotel.click()
+  45 |     }
+  46 |     async ContinueBtn(){
+  47 |         await this.continue.click()
+  48 |     }
+  49 | 
+  50 | 
+  51 | }
+```

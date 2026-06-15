@@ -1,0 +1,8 @@
+Simple Alert : I am an alert box!
+Type :  alert
+confirmation alert :  Press a Button !
+Type :  confirm
+Prmopt alert : Please enter your name
+defaltvalue : Automation Testing user
+Type :  prompt
+promt alert : Hello HI PRIYADHARSAN How are you today
